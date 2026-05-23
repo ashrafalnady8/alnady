@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب النادي لملابس الاطفال جمله</title>
+    <!-- استدعاء مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+            --card-hover: #f1f5f9;
+            --primary-color: #ff477e; /* لون يناسب ملابس الأطفال */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        /* الهيدر وتصميم اللوجو */
+        .profile {
+            margin-bottom: 25px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 3px solid #fdf2f8;
+            overflow: hidden;
+        }
+
+        .profile-img i {
+            font-size: 3.5rem;
+        }
+
+        .profile h1 {
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+            color: #0f172a;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .profile p {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        /* أزرار الروابط */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 1px solid #e2e8f0;
+            text-align: right;
+            line-height: 1.4;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            background-color: var(--card-hover);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+        }
+
+        .link-card i {
+            font-size: 1.5rem;
+            width: 35px;
+            margin-left: 12px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .link-text {
+            flex-grow: 1;
+        }
+
+        /* ألوان الأيقونات */
+        .fa-facebook { color: #1877F2; }
+        .fa-instagram { color: #E1306C; }
+        .fa-telegram { color: #26A5E4; }
+        .fa-map-location-dot { color: #EA4335; }
+        .fa-whatsapp { color: #25D366; }
+        .fa-phone { color: #007bff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- قسم رأس الصفحة واللوجو -->
+        <div class="profile">
+            <div class="profile-img">
+                <!-- أيقونة افتراضية لملابس وألعاب الأطفال بشكل أنيق ومبهج -->
+                <i class="fa-solid fa-child-playing"></i>
+            </div>
+            <h1>مكتب النادي لملابس الاطفال جمله</h1>
+            <p>تواصل معنا واطلب أحدث الموديلات مباشرة</p>
+        </div>
+
+        <!-- قسم الروابط والموقع -->
+        <div class="links-container">
+
+            <!-- فيسبوك -->
+            <a href="https://www.facebook.com/alnadytextile?mibextid=ZbWKwL" target="_blank" class="link-card">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="link-text">تابعنا على فيسبوك</span>
+            </a>
+
+            <!-- انستجرام -->
+            <a href="https://www.instagram.com/nsaartextile?igsh=c2M4MnBjM2pvMWlo" target="_blank" class="link-card">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="link-text">تابعنا على انستجرام</span>
+            </a>
+
+            <!-- تليجرام -->
+            <a href="https://t.me/+Lal-fMFmNEEzZDI0" target="_blank" class="link-card">
+                <i class="fa-brands fa-telegram"></i>
+                <span class="link-text">قناتنا على تليجرام (الموديلات والأسعار)</span>
+            </a>
+
+            <!-- خرائط جوجل والعنوان بالتفصيل -->
+            <a href="https://maps.google.com" target="_blank" class="link-card">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span class="link-text">العنوان: شارع الجيش، العتبه، بجوار مول مكه، أمام محطة باب الشعرية مباشرة</span>
+            </a>
+
+            <!-- واتساب -->
+            <a href="https://wa.me" target="_blank" class="link-card">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="link-text">تواصل معنا عبر واتساب</span>
+            </a>
+
+            <!-- اتصال هاتفي مباشر -->
+            <a href="tel:01204844026" class="link-card">
+                <i class="fa-solid fa-phone"></i>
+                <span class="link-text">إتصل بنا مباشرة: 01204844026</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
