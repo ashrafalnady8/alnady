@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب النادي لملابس الاطفال جمله</title>
-    <!-- استدعاء مكتبة Font Awesome للأيقونات -->
+    <!-- استدعاء مكتبة Font Awesome للأيقونات الرسمية -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         :root {
-            --bg-color: #f8fafc;
+            --bg-color: #f4f6f9;
             --text-color: #1e293b;
             --card-bg: #ffffff;
-            --card-hover: #f1f5f9;
-            --primary-color: #ff477e; /* لون يناسب ملابس الأطفال */
+            --card-hover: #f8fafc;
         }
 
         * {
@@ -38,37 +37,37 @@
             text-align: center;
         }
 
-        /* الهيدر وتصميم اللوجو */
+        /* رأس الصفحة وتنسيق اللوجو الحقيقي */
         .profile {
             margin-bottom: 25px;
             background: #ffffff;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            padding: 25px 20px;
+            border-radius: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
         }
 
-        .profile-img {
-            width: 110px;
-            height: 110px;
-            background-color: #fff;
-            border-radius: 50%;
+        .profile-img-container {
+            width: 120px;
+            height: 120px;
             margin: 0 auto 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 3px solid #ff477e;
+            overflow: hidden;
+            background-color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
-            color: var(--primary-color);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            border: 3px solid #fdf2f8;
-            overflow: hidden;
         }
 
-        .profile-img i {
-            font-size: 3.5rem;
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .profile h1 {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             margin-bottom: 8px;
             color: #0f172a;
             font-weight: 700;
@@ -76,16 +75,16 @@
         }
 
         .profile p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: #64748b;
             font-weight: 500;
         }
 
-        /* أزرار الروابط */
+        /* تنسيق أزرار المنصات واللوجوهات الملونة */
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
         }
 
         .link-card {
@@ -95,93 +94,112 @@
             color: var(--text-color);
             text-decoration: none;
             padding: 16px 20px;
-            border-radius: 14px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            transition: all 0.2s ease;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+            transition: all 0.25s ease;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.05rem;
             border: 1px solid #e2e8f0;
             text-align: right;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .link-card:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
             background-color: var(--card-hover);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.06);
         }
 
-        .link-card i {
-            font-size: 1.5rem;
-            width: 35px;
-            margin-left: 12px;
-            text-align: center;
+        /* تصميم الأيقونات الدائرية الملونة بالهوية الرسمية للمنصات */
+        .icon-wrapper {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 14px;
             flex-shrink: 0;
+            color: #ffffff;
+            font-size: 1.3rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
         }
 
         .link-text {
             flex-grow: 1;
         }
 
-        /* ألوان الأيقونات */
-        .fa-facebook { color: #1877F2; }
-        .fa-instagram { color: #E1306C; }
-        .fa-telegram { color: #26A5E4; }
-        .fa-map-location-dot { color: #EA4335; }
-        .fa-whatsapp { color: #25D366; }
-        .fa-phone { color: #007bff; }
+        /* الألوان الرسمية للوجوهات المنصات */
+        .bg-facebook { background: #1877F2; }
+        .bg-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .bg-telegram { background: #26A5E4; }
+        .bg-google-maps { background: #EA4335; }
+        .bg-whatsapp { background: #25D366; }
+        .bg-phone { background: #007bff; }
     </style>
 </head>
 <body>
 
     <div class="container">
         
-        <!-- قسم رأس الصفحة واللوجو -->
+        <!-- قسم رأس الصفحة واللوجو الحقيقي للبراند -->
         <div class="profile">
-            <div class="profile-img">
-                <!-- أيقونة افتراضية لملابس وألعاب الأطفال بشكل أنيق ومبهج -->
-                <i class="fa-solid fa-child-playing"></i>
+            <div class="profile-img-container">
+                <!-- هنا سيقرأ الموقع صورة شعارك الحقيقي المرفوع باسم logo.jpg -->
+                <img src="logo.jpg" onerror="this.src='https://unsplash.com';" alt="لوجو مكتب النادي">
             </div>
             <h1>مكتب النادي لملابس الاطفال جمله</h1>
-            <p>تواصل معنا واطلب أحدث الموديلات مباشرة</p>
+            <p>تشكيلة متنوعة من ملابس الأطفال بأفضل أسعار الجملة</p>
         </div>
 
-        <!-- قسم الروابط والموقع -->
+        <!-- قسم الروابط بلوجوهات المنصات الرسمية الملونة -->
         <div class="links-container">
 
-            <!-- فيسبوك -->
-            <a href="https://www.facebook.com/alnadytextile?mibextid=ZbWKwL" target="_blank" class="link-card">
-                <i class="fa-brands fa-facebook"></i>
+            <!-- لوجو وفيسبوك الرسمي -->
+            <a href="https://facebook.com" target="_blank" class="link-card">
+                <div class="icon-wrapper bg-facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
                 <span class="link-text">تابعنا على فيسبوك</span>
             </a>
 
-            <!-- انستجرام -->
-            <a href="https://www.instagram.com/nsaartextile?igsh=c2M4MnBjM2pvMWlo" target="_blank" class="link-card">
-                <i class="fa-brands fa-instagram"></i>
+            <!-- لوجو وانستجرام الرسمي -->
+            <a href="https://instagram.com" target="_blank" class="link-card">
+                <div class="icon-wrapper bg-instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
                 <span class="link-text">تابعنا على انستجرام</span>
             </a>
 
-            <!-- تليجرام -->
-            <a href="https://t.me/+Lal-fMFmNEEzZDI0" target="_blank" class="link-card">
-                <i class="fa-brands fa-telegram"></i>
+            <!-- لوجو وتليجرام الرسمي -->
+            <a href="https://t.me" target="_blank" class="link-card">
+                <div class="icon-wrapper bg-telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
                 <span class="link-text">قناتنا على تليجرام (الموديلات والأسعار)</span>
             </a>
 
-            <!-- خرائط جوجل والعنوان بالتفصيل -->
-            <a href="https://maps.google.com" target="_blank" class="link-card">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <span class="link-text">العنوان: شارع الجيش، العتبه، بجوار مول مكه، أمام محطة باب الشعرية مباشرة</span>
+            <!-- لوجو خرائط جوجل والعنوان بالتفصيل -->
+            <a href="https://google.com" target="_blank" class="link-card">
+                <div class="icon-wrapper bg-google-maps">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <span class="link-text"><b>العنوان:</b> شارع الجيش، العتبه، بجوار مول مكه، أمام محطة باب الشعرية مباشرة</span>
             </a>
 
-            <!-- واتساب -->
+            <!-- لوجو واتساب الرسمي -->
             <a href="https://wa.me" target="_blank" class="link-card">
-                <i class="fa-brands fa-whatsapp"></i>
+                <div class="icon-wrapper bg-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
                 <span class="link-text">تواصل معنا عبر واتساب</span>
             </a>
 
-            <!-- اتصال هاتفي مباشر -->
+            <!-- لوجو الاتصال الهاتفي الرسمي -->
             <a href="tel:01204844026" class="link-card">
-                <i class="fa-solid fa-phone"></i>
+                <div class="icon-wrapper bg-phone">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
                 <span class="link-text">إتصل بنا مباشرة: 01204844026</span>
             </a>
 
@@ -190,4 +208,3 @@
 
 </body>
 </html>
-
