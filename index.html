@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب النادي لملابس الاطفال جمله</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSU78+VVH7zkL3s47qI3RUsr/3LaY27e+yIAtz8V04fWvSGbuDw6cM9zqp1Ym5TSQkAVsRg==">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSU78+VVH7zkL3s47qI3RUsr/3LaY27e+yIAtz8V04fWvSGbuDw6cM9zqp[...]
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
@@ -147,79 +147,6 @@
             animation: fadeInUp 0.6s ease 0.4s both;
         }
 
-        /* Image Gallery Section */
-        .gallery-section {
-            padding: 30px 20px;
-            background: var(--bg-light);
-            border-bottom: 2px solid var(--border-light);
-        }
-
-        .gallery-title {
-            text-align: center;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            animation: fadeIn 0.6s ease 0.5s both;
-        }
-
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-
-        .gallery-item {
-            position: relative;
-            width: 100%;
-            height: 120px;
-            border-radius: 12px;
-            overflow: hidden;
-            cursor: pointer;
-            animation: fadeInScale 0.6s ease;
-        }
-
-        .gallery-item:nth-child(2) {
-            animation-delay: 0.1s;
-        }
-
-        .gallery-item:nth-child(3) {
-            animation-delay: 0.2s;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease, filter 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.15) rotate(2deg);
-            filter: brightness(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(102, 126, 234, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            color: white;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
         /* Content Section */
         .content {
             padding: 30px 20px;
@@ -229,7 +156,7 @@
             text-align: center;
             margin-bottom: 30px;
             color: var(--text-dark);
-            animation: fadeIn 0.6s ease 0.6s both;
+            animation: fadeIn 0.6s ease 0.5s both;
         }
 
         .description h2 {
@@ -255,7 +182,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            animation: fadeIn 0.6s ease 0.7s both;
+            animation: fadeIn 0.6s ease 0.6s both;
         }
 
         .link-card {
@@ -341,7 +268,7 @@
             border-top: 2px solid var(--border-light);
             font-size: 0.85rem;
             color: var(--text-light);
-            animation: fadeInUp 0.6s ease 0.8s both;
+            animation: fadeInUp 0.6s ease 0.7s both;
         }
 
         .footer p {
@@ -404,17 +331,6 @@
             }
         }
 
-        @keyframes fadeInScale {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
         @keyframes pulse {
             0%, 100% {
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -461,10 +377,6 @@
                 padding: 20px 15px;
             }
 
-            .gallery-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
             .theme-toggle {
                 width: 45px;
                 height: 45px;
@@ -473,10 +385,6 @@
         }
 
         @media (max-width: 320px) {
-            .gallery-container {
-                grid-template-columns: 1fr;
-            }
-
             .header h1 {
                 font-size: 1.3rem;
             }
@@ -501,25 +409,6 @@
             </div>
             <h1>مكتب النادي</h1>
             <p>ملابس أطفال جملة بأفضل الأسعار والجودة</p>
-        </div>
-
-        <!-- Gallery Section -->
-        <div class="gallery-section">
-            <h3 class="gallery-title">🛍️ معرض الملابس</h3>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1503696552063-48099dbfaea9?w=200&h=200&fit=crop" alt="ملابس أطفال 1">
-                    <div class="gallery-overlay">ملابس صيفية</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507027957410-fbf03bcfa9c6?w=200&h=200&fit=crop" alt="ملابس أطفال 2">
-                    <div class="gallery-overlay">ملابس أنيقة</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=200&h=200&fit=crop" alt="ملابس أطفال 3">
-                    <div class="gallery-overlay">تصاميم جديدة</div>
-                </div>
-            </div>
         </div>
 
         <!-- Content Section -->
@@ -634,7 +523,7 @@
         // Add animation on link hover
         const linkCards = document.querySelectorAll('.link-card');
         linkCards.forEach((card, index) => {
-            card.style.animationDelay = `${0.7 + (index * 0.1)}s`;
+            card.style.animationDelay = `${0.6 + (index * 0.1)}s`;
             card.style.animation = 'fadeInUp 0.6s ease both';
         });
     </script>
