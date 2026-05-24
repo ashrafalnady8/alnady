@@ -4,207 +4,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب النادي لملابس الاطفال جمله</title>
-    <!-- استدعاء مكتبة Font Awesome للأيقونات الرسمية -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSU78+VVH7zkL3s47qI3RUsr/3LaY27e+yIAtz8V04fWvSGbuDw6cM9zqp[...]
     <style>
-        :root {
-            --bg-color: #f4f6f9;
-            --text-color: #1e293b;
-            --card-bg: #ffffff;
-            --card-hover: #f8fafc;
-        }
-
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             padding: 20px;
         }
 
         .container {
             width: 100%;
-            max-width: 480px;
-            text-align: center;
-        }
-
-        /* رأس الصفحة وتنسيق اللوجو الحقيقي */
-        .profile {
-            margin-bottom: 25px;
+            max-width: 500px;
             background: #ffffff;
-            padding: 25px 20px;
-            border-radius: 24px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
         }
 
-        .profile-img-container {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 15px;
-            border-radius: 50%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            border: 3px solid #ff477e;
-            overflow: hidden;
-            background-color: #fff;
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .logo-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 4px solid #ff6b35;
+            overflow: hidden;
         }
 
-        .profile-img-container img {
+        .logo-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .profile h1 {
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-            color: #0f172a;
+        .header h1 {
+            font-size: 1.8rem;
             font-weight: 700;
-            line-height: 1.4;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
         }
 
-        .profile p {
+        .header p {
             font-size: 0.95rem;
-            color: #64748b;
-            font-weight: 500;
+            opacity: 0.95;
+            font-weight: 300;
+            line-height: 1.6;
         }
 
-        /* تنسيق أزرار المنصات واللوجوهات الملونة */
+        /* Content Section */
+        .content {
+            padding: 30px 20px;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .description h2 {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 12px;
+        }
+
+        .description p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Links Section */
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 12px;
         }
 
         .link-card {
             display: flex;
             align-items: center;
-            background-color: var(--card-bg);
-            color: var(--text-color);
+            padding: 16px 18px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
             text-decoration: none;
-            padding: 16px 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.01);
-            transition: all 0.25s ease;
-            font-weight: 600;
-            font-size: 1.05rem;
-            border: 1px solid #e2e8f0;
-            text-align: right;
-            line-height: 1.5;
+            color: #333;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-weight: 500;
         }
 
         .link-card:hover {
-            transform: translateY(-3px);
-            background-color: var(--card-hover);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+            border-color: #667eea;
+            background: #f0f4ff;
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
         }
 
-        /* تصميم الأيقونات الدائرية الملونة بالهوية الرسمية للمنصات */
         .icon-wrapper {
-            width: 42px;
-            height: 42px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 14px;
-            flex-shrink: 0;
-            color: #ffffff;
+            color: white;
             font-size: 1.3rem;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            margin-left: 15px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
 
         .link-text {
             flex-grow: 1;
+            font-size: 0.95rem;
         }
 
-        /* الألوان الرسمية للوجوهات المنصات */
-        .bg-facebook { background: #1877F2; }
+        /* Social Colors */
+        .bg-facebook { background: linear-gradient(135deg, #1877F2 0%, #0a66c2 100%); }
         .bg-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-        .bg-telegram { background: #26A5E4; }
-        .bg-google-maps { background: #EA4335; }
-        .bg-whatsapp { background: #25D366; }
-        .bg-phone { background: #007bff; }
+        .bg-telegram { background: linear-gradient(135deg, #26A5E4 0%, #2196F3 100%); }
+        .bg-google-maps { background: linear-gradient(135deg, #EA4335 0%, #d33425 100%); }
+        .bg-whatsapp { background: linear-gradient(135deg, #25D366 0%, #1ba855 100%); }
+        .bg-phone { background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); }
+
+        /* Footer */
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #e9ecef;
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header {
+                padding: 30px 15px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .logo-container {
+                width: 120px;
+                height: 120px;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
-        
-        <!-- قسم رأس الصفحة واللوجو الحقيقي للبراند -->
-        <div class="profile">
-            <div class="profile-img-container">
-                <!-- هنا سيقرأ الموقع صورة شعارك الحقيقي المرفوع باسم logo.jpg -->
-                <img src="logo.jpg" onerror="this.src='https://via.placeholder.com/120';" alt="لوجو مكتب النادي">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="logo-container">
+                <img src="logo.jpg" onerror="this.src='https://via.placeholder.com/140/667eea/ffffff?text=El+Nady';" alt="لوجو النادي">
             </div>
-            <h1>مكتب النادي لملابس الاطفال جمله</h1>
-            <p>تشكيلة متنوعة من ملابس الأطفال بأفضل أسعار الجملة</p>
+            <h1>مكتب النادي</h1>
+            <p>ملابس أطفال جملة بأفضل الأسعار والجودة</p>
         </div>
 
-        <!-- قسم الروابط بلوجوهات المنصات الرسمية الملونة -->
-        <div class="links-container">
+        <!-- Content Section -->
+        <div class="content">
+            <div class="description">
+                <h2>تشكيلة متنوعة وحصرية</h2>
+                <p>نقدم لكم أفضل تشكيلة من ملابس الأطفال بأسعار الجملة المنافسة مع جودة عالية وتصاميم عصرية</p>
+            </div>
 
-            <!-- لوجو وفيسبوك الرسمي -->
-            <a href="https://www.facebook.com/share/1CXpFsZmHo/" target="_blank" class="link-card">
-                <div class="icon-wrapper bg-facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <span class="link-text">تابعنا على فيسبوك</span>
-            </a>
+            <!-- Links Container -->
+            <div class="links-container">
+                <!-- Facebook Link -->
+                <a href="https://www.facebook.com/share/1CXpFsZmHo/" target="_blank" class="link-card">
+                    <div class="icon-wrapper bg-facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <span class="link-text">تابعنا على فيسبوك</span>
+                    <i class="fa-solid fa-chevron-left" style="color: #667eea; opacity: 0.5;"></i>
+                </a>
 
-            <!-- لوجو وانستجرام الرسمي -->
-            <a href="https://www.instagram.com/nsaartextile?igsh=c2M4MnBjM2pvMWlo" target="_blank" class="link-card">
-                <div class="icon-wrapper bg-instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <span class="link-text">تابعنا على انستجرام</span>
-            </a>
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/nsaartextile?igsh=c2M4MnBjM2pvMWlo" target="_blank" class="link-card">
+                    <div class="icon-wrapper bg-instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <span class="link-text">تابعنا على انستجرام</span>
+                    <i class="fa-solid fa-chevron-left" style="color: #667eea; opacity: 0.5;"></i>
+                </a>
 
-            <!-- لوجو وتليجرام الرسمي -->
-            <a href="https://t.me/+Lal-fMFmNEEzZDI0" target="_blank" class="link-card">
-                <div class="icon-wrapper bg-telegram">
-                    <i class="fa-brands fa-telegram"></i>
-                </div>
-                <span class="link-text">قناتنا على تليجرام (الموديلات والأسعار)</span>
-            </a>
+                <!-- Telegram Link -->
+                <a href="https://t.me/+Lal-fMFmNEEzZDI0" target="_blank" class="link-card">
+                    <div class="icon-wrapper bg-telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <span class="link-text">قناتنا على تليجرام</span>
+                    <i class="fa-solid fa-chevron-left" style="color: #667eea; opacity: 0.5;"></i>
+                </a>
 
-            <!-- لوجو خرائط جوجل والعنوان بالتفصيل -->
-            <a href="https://maps.app.goo.gl/tFNXZD2PqP3ryFbW9" target="_blank" class="link-card">
-                <div class="icon-wrapper bg-google-maps">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                </div>
-                <span class="link-text"><b>العنوان:</b> شارع الجيش، العتبه، بجوار مول مكه، أمام محطة باب الشعرية مباشرة</span>
-            </a>
+                <!-- Google Maps Link -->
+                <a href="https://maps.app.goo.gl/tFNXZD2PqP3ryFbW9" target="_blank" class="link-card">
+                    <div class="icon-wrapper bg-google-maps">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <span class="link-text">عنواننا على الخريطة</span>
+                    <i class="fa-solid fa-chevron-left" style="color: #667eea; opacity: 0.5;"></i>
+                </a>
 
-            <!-- لوجو واتساب الرسمي -->
-            <a href="https://wa.me/201204844026" target="_blank" class="link-card">
-                <div class="icon-wrapper bg-whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <span class="link-text">تواصل معنا عبر واتساب</span>
-            </a>
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/201204844026" target="_blank" class="link-card">
+                    <div class="icon-wrapper bg-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <span class="link-text">تواصل معنا عبر واتساب</span>
+                    <i class="fa-solid fa-chevron-left" style="color: #667eea; opacity: 0.5;"></i>
+                </a>
 
-            <!-- لوجو الاتصال الهاتفي الرسمي -->
-            <a href="tel:+201204844026" class="link-card">
-                <div class="icon-wrapper bg-phone">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <span class="link-text">إتصل بنا مباشرة: 01204844026</span>
-            </a>
+                <!-- Phone Link -->
+                <a href="tel:+201204844026" class="link-card">
+                    <div class="icon-wrapper bg-phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span class="link-text">اتصل بنا: 01204844026</span>
+                    <i class="fa-solid fa-chevron-left" style="color: #667eea; opacity: 0.5;"></i>
+                </a>
+            </div>
+        </div>
 
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>مكتب النادي لملابس الأطفال</strong></p>
+            <p>شارع الجيش - العتبة - القاهرة</p>
         </div>
     </div>
-
 </body>
 </html>
